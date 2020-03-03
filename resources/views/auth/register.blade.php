@@ -1,14 +1,36 @@
 @extends('layouts.master')
 @section('content')
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-5">
-                <div class="form"
-                <div class=""
-            </div>
-        </div>
+   <div class="container">
+       <div class="row justify-content-center">
+           <div class="col-md-5">
+               <div class="form-div">
+                   <div class="form-header"><b>Maak een account aan</b></div>
+                   <div class="form-body">
+                       <div style="text-align:center" class="form-content">
+                            <form method="POST" action="{{ route('register') }}">
+                                @csrf
+                                <input class="input-field" type="text" name="voornaam" placeholder="Voornaam..." required><br>
+                                
+                                <input class="input-field" type="text" name="tv" placeholder="Tussenvoegsel..."><br>
+                                
+                                <input class="input-field" type="text" name="achternaam" placeholder="Achternaam..." required><br>
 
-    </div>
+                                <input class="input-field" type="email" name="email" placeholder="E-mail..." required><br>
+                                
+                                <input class="input-field" type="password" name="password" placeholder="Wachtwoord..." required><br>
+
+                                <input type="password" class="input-field" name="password_confirmation" placeholder="Wachtwoord bevestigen...">
+                                
+                                <button type="submit" class="btn btn-primary">
+                                    Aanmelden
+                                </button>
+                            </form>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
 @endsection
 
 {{-- <div class="container"> --}}

@@ -1,3 +1,45 @@
-.content-center {
-    margin: auto;
+.form-div {
+    margin-top: 8%;
+    width: 100%;
+}
+
+.form-header {
+    height: 7vh;
+    background-color: #343a40;
+    text-align: center;
+    line-height: 1.8em;
+    color: white;
+    font-size: 2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+.form-body {
+    width: 100%;
+    background-color: white;
+    border: 2px solid #343a40;
+    border-bottom-left-radius: 8%;
+    border-bottom-right-radius: 8%;
+}
+
+.form-content {
+ padding: 1em;
+}
+
+.input-field {
+    height: 3em;
+    margin: 1em;
+    width: 80%;
+    border: none;
+    border-bottom: 2px solid gray;
+    outline: none;
+    transition: 0.4s ease-in-out;
+}
+
+.input-field:focus {
+    border-bottom: 2px solid black;
+}
+
+.input-field:hover {
+    border-bottom: 2px solid black;
 }
