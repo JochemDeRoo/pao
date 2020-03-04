@@ -1,11 +1,20 @@
 #logoutBtn {
-    background-color: red;
+    background-color: #6C1413;
     border: none;
     width: 6em;
+    color: white;
     height: 2.5em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.5s ease-in-out;
 }
 
 #logoutBtn:hover {
     cursor: pointer;
+    width: 6.4em;
+    height: 2.9em;
+
+}
+
+body {
+    background-color: brown;
 }

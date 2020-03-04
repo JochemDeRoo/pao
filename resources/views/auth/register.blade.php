@@ -19,10 +19,9 @@
                                 
                                 <input class="input-field" type="password" name="password" placeholder="Wachtwoord..." required><br>
 
-                                <input type="password" class="input-field" name="password_confirmation" placeholder="Wachtwoord bevestigen...">
-                                
+                                <input type="password" class="input-field" name="password_confirmation" placeholder="Wachtwoord bevestigen..."><br>
                                 <button type="submit" class="btn btn-primary">
-                                    Aanmelden
+                                    Account aanmaken
                                 </button>
                             </form>
                        </div>

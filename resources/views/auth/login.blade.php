@@ -1,7 +1,31 @@
 @extends('layouts.master')
 
 @section('content')
+
 <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+            <div class="form-div">
+                <div class="form-header"><b>Inloggen</b></div>
+                <div class="form-body">
+                    <div style="text-align:center" class="form-content">
+                        <form method="POST" action="{{ route('login') }}">
+                             @csrf
+                             <input class="input-field" type="email" name="email" placeholder="E-mail..." required><br>
+                             
+                             <input class="input-field" type="password" name="password" placeholder="Wachtwoord..." required><br>
+
+                             <button type="submit" class="btn btn-primary">
+                                 Log in
+                             </button>
+                         </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{-- <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -69,5 +93,5 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 @endsection
