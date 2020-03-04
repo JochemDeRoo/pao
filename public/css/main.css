@@ -1,0 +1,11 @@
+#logoutBtn {
+    background-color: red;
+    border: none;
+    width: 6em;
+    height: 2.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#logoutBtn:hover {
+    cursor: pointer;
+}
